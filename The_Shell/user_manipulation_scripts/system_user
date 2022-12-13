@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo useradd -r username
+//checks
+useradd -D

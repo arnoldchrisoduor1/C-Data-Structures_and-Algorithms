@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo useradd -c "Test User Account" username
+

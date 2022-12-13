@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo useradd -m username
+//to create specific directory
+sudo useradd -m -d /opt/username username

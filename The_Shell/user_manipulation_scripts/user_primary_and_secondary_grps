@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo useradd -g users -G wheel,developers username
+id username //check
+
+//This script creates a user with primary group users and secondary groups wheel,developers.
+//secondary groups are not amust a user to have

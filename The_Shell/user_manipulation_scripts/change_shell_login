@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo useradd -D -s /bin/bash
+//checks
+sudo useradd -D | grep -i shell

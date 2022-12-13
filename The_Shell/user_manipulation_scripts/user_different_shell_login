@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo useradd -s /usr/bin/zn sh username
+//check
+grep username /etc/password
+//the details are stores in this directory above

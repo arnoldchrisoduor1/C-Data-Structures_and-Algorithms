@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo useradd -e 2019-01-22
+//checks
+sudo chage -l username

@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo useradd -g users username
+//check
+id -gn username
