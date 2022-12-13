@@ -1,0 +1,3 @@
+#!/bin/bash
+usermod -u 2005 foo
+groupmod -g 3000 foo
