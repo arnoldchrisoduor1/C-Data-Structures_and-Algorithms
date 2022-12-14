@@ -1,6 +1,0 @@
-#!/bin/bash
-rm somefile.txt
-rm -r somedirectory
-rm * //removes all files except the hidden
-rm -f .*    //removes all files and even the hidden
-rm -rf *    //removes all files and directories plus the hidden ones in the current directory

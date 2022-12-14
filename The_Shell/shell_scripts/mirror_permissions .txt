@@ -1,2 +1,0 @@
-#!/bin/bash
-sudo chmod --reference=multiply.c hello.c
