@@ -5,5 +5,6 @@ int is_upper(int c);
 double mul(double a, double b);
 void most_numbers(void);
 void print_line(int n);
+void print_square(int size);
 
 #endif
