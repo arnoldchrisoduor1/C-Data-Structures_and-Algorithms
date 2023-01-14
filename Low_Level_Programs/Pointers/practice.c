@@ -1,10 +1,20 @@
 #include <stdio.h>
 
-void switch_int(int *a, int *b){
+int main(){
 
-	int c = *a;
-	*b = *a;
-	*b = c;
+	int m;
+	int *n;
+
+	n = &m;
+		m = 89;
+	printf("\nValue of m before change %d",m);
+	printf("\nValue held by pointer n: %p",n);
+
+	*n = 654;
+
+	printf("\nNew value of m 654: %d",m);
+	printf("\nAddress of m: %p",&m);
+	printf("\nValue held by the pointer: %p",n);
 
 	return 0;
 }
