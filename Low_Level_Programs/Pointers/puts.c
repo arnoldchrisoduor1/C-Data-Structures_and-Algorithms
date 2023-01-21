@@ -1,6 +1,11 @@
 #include "header_file.h"
 #include <stdio.h>
 
+/*
+ * Printing out a string
+ *
+ */
+
 int main(void){
 
 	char *c;
