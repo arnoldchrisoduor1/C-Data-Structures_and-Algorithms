@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "header_file.h"
 
+/*
+ * string concentenation
+ *
+ */
+
 int main(void){
 	char a1[] = "First";
 	char a2[] = "Second";
