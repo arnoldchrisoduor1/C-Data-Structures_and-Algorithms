@@ -1,5 +1,9 @@
 #include <stdio.h>
-//counting number of characters in a string.
+/*
+ * Counting the number of characters in a string
+ *
+ */
+
 int main(void)
 {
 	void puts2(char *n)
