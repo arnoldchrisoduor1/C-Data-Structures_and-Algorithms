@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+ * Copying strings
+ *
+ */
+
 int main(void)
 {
 	char *_str_copy(char *des, char *src)
