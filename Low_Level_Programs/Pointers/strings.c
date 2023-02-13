@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
+/*
+ * Printing strings in reverse
+ * Printing strings whle skipping a character
+ *
+ */
+
 int main ()
 {
 	void reverse(char *c)
