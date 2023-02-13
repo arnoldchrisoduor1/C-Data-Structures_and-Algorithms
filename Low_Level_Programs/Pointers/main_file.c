@@ -71,3 +71,8 @@ char *to_upper(char *s){
 	}
 	return (s);
 }
+
+void reset(int *n)
+{
+	*n = 76;
+}
