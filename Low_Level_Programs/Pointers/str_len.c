@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "header_file.h"
 
+/*
+ * Getting the length of the string
+ *
+ */
+
 int main(void){
 
 	char *str;
