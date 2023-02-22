@@ -1,44 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void count_list(struct node *head)
+void count_nodes(struct node *head)
 {
-	if(head == NULL)
-		puts("The list is empty!");
+	int count = 0;
 	struct node *ptr = NULL;
 	ptr = head;
 
 	while(ptr != NULL)
 	{
 		count++;
-		ptr=ptr->link;
+		ptr = ptr->link;
 	}
-
-	printf("\nNumber of nodes is:%d",count);
+	printf("\nNumber of nodes:%d",count);
 }
 
-void print_list(struct node *head)
+void print_nodes(struct node *head)
 {
-	if(head == NULL)
-		puts("The list is empty!");
-
 	struct node *ptr = NULL;
 	ptr = head;
 
 	while(ptr != NULL)
 	{
 		printf("\n%d",ptr->data);
-		ptr= ptr->link;
+		ptr=ptr->link;
 	}
 }
-void add_to_end(struct *head,int data)
+
+void add_node(struct node *head, *data)
 {
 	struct node *temp *ptr;
 
 	temp = (struct node*)malloc(sizeof(struct node));
 
-	temp ->data = data;
-	temp ->link = NULL;
+	temp -> data = data;
+	temp -> link = NULL;
 
 	ptr = head;
 
