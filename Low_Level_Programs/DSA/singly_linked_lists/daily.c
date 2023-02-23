@@ -1,51 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void count_list(struct node *head)
+struct node
 {
-	if(head == NULL)
-		puts("The list is empty!");
-	struct node *ptr = NULL;
-	ptr = head;
+	int data;
+	struct node *link;
+};
 
-	while(ptr != NULL)
-	{
-		count++;
-		ptr=ptr->link;
-	}
+struct node* add_node(struct node *ptr,int data)
+{
+	struct node *temp = (struct node*)malloc(sizeof(struct node));
 
-	printf("\nNumber of nodes is:%d",count);
+	temp->data = data;
+	temp->link = NULL;
+
+	ptr->link = temp;
+
+	return temp;
 }
 
-void print_list(struct node *head)
+int main()
 {
-	if(head == NULL)
-		puts("The list is empty!");
+	struct node *head = (struct node*)malloc(sizeof(struct node));
 
-	struct node *ptr = NULL;
-	ptr = head;
+	head -> data = 98;
+	head -> link = NULL;
 
-	while(ptr != NULL)
-	{
-		printf("\n%d",ptr->data);
-		ptr= ptr->link;
-	}
-}
-void add_to_end(struct *head,int data)
-{
-	struct node *temp *ptr;
+	struct node *ptr = head;
 
-	temp = (struct node*)malloc(sizeof(struct node));
-
-	temp ->data = data;
-	temp ->link = NULL;
+	ptr = add_node(ptr,78);
+	ptr = add_node(ptr,9);
+	ptr = add_node(ptr,45);
 
 	ptr = head;
 
-	while(ptr->link != NULL)
+	while(ptr!=NULL)
 	{
+		printf("\nValue:%d",ptr->data);
 		ptr = ptr->link;
 	}
-	ptr->link = temp;
+
+	return 0;
 }
+
 
