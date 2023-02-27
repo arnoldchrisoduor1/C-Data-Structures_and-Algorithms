@@ -3,24 +3,24 @@
 int add_beg(int arr[],int n,int data)
 {
 	int i;
-	for(i=n-1; i>=0; i--)
+	for(i=n-1;i>=0;i--)
 	{
 		arr[i+1] = arr[i];
 	}
 
 	arr[0] = data;
 
-	return i+1;
+	return n+1;
 }
 
 int main()
 {
-	int arr[5],data = 8,i,n;
+	int arr[5],n,data = 8,i;
 
-	puts("How much data to input:");
+	puts("How many integers do you have:");
 	scanf("%d",&n);
 
-	puts("Input the data:");
+	puts("Give the number:");
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",&arr[i]);
@@ -28,9 +28,10 @@ int main()
 
 	n = add_beg(arr,n,data);
 
-	for(i=0; i<n; i++)
+	for(i=0;i<n;i++)
 	{
-		printf("%d",arr[i]);
+		printf("\n%d",arr[i]);
 	}
+
 	return 0;
 }
