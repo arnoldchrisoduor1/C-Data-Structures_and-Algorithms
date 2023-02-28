@@ -7,7 +7,7 @@ struct node
 	struct node *link;
 };
 
-struct node* add_node(struct node *ptr, int data)
+struct node* add_node(struct node *ptr,int data)
 {
 	struct node *temp = (struct node*)malloc(sizeof(struct node));
 	temp->data = data;
@@ -38,12 +38,12 @@ int main()
 
 	struct node *ptr = head;
 
-	ptr = add_node(ptr,73);
-	ptr = add_node(ptr,89);
+	ptr = add_node(ptr,63);
+	ptr = add_node(ptr,76);
 
 	ptr = head;
 
-	printf("\nThese are the node created:");
+	printf("\nThe linked list has been created with the following values");
 
 	while(ptr!=NULL)
 	{
@@ -53,12 +53,17 @@ int main()
 
 	head = del(head);
 
-	if(head==NULL)
-		printf("\nThe linked list is successfully deleted");
+	putchar('\n');
+	
+	if(head == NULL)
+	{
+		puts("The linked list has been successfully deleted");
+	}
 	else
-		puts("The delete opertaion was unsuccessful");
+	{
+		puts("Deletion did not work");
+	}
 
 	return 0;
 }
-
 
