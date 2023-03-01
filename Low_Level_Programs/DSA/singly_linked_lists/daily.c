@@ -1,64 +1,42 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-struct node
+struct node *del last(struct node *head)
 {
-	int data;
-	struct node *link;
-};
-
-struct node* add_node(struct node *ptr, int data)
-{
-	struct node *temp = (struct node*)malloc(sizeof(struct node));
-	temp->data = data;
-	temp->link = NULL;
-
-	ptr->link = temp;
-	return temp;
-}
-
-struct node* del(struct node *head)
-{
-	struct node *temp = head;
-
-	while(temp!=NULL)
-	{
-		temp = temp->link;
-		free(head);
-		head = temp;
-	}
-	return head;
-}
-
-int main()
-{
-	struct node *head = (struct node*)malloc(sizeof(struct node));
-	head->data = 98;
-	head->link = NULL;
-
-	struct node *ptr = head;
-
-	ptr = add_node(ptr,73);
-	ptr = add_node(ptr,89);
-
-	ptr = head;
-
-	printf("\nThese are the node created:");
-
-	while(ptr!=NULL)
-	{
-		printf("\n%d",ptr->data);
-		ptr = ptr->link;
-	}
-
-	head = del(head);
-
 	if(head==NULL)
-		printf("\nThe linked list is successfully deleted");
+	{
+		puts("The list is empty");
+	}
+	else if(head->link == NULL)
+	{
+		struct node *temp = head;
+		temp = temp->link;
+		free(temp);
+		temp=NULL;
+	}
 	else
-		puts("The delete opertaion was unsuccessful");
+		struct node *temp = head;
+		struct node *temp2 = head;
 
-	return 0;
+		while(temp->link !=NULL)
+		{
+			temp2 = temp;
+			temp = temp->link;
+		}
+
+		free(temp);
+		temp=NULL;
+		temp2->link = NULL;
 }
 
+struct node *del_first(struct node *head)
+{
+	if(head==NULL)
+	{
+		puts("There's no list");
+	}
 
+	else
+	{
+		struct node *temp = head;
+		head = head->link;
+		free(temp);
+	}
+}
