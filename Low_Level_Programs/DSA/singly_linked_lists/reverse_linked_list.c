@@ -9,7 +9,7 @@ struct node
 
 struct node* add_node(struct node *ptr, int data)
 {
-	struct node *temp = (struct node*)malloc(sizeof(struct node));
+	struct node *temp = malloc(sizeof(struct node));
 	temp->data = data;
 	temp->link = NULL;
 
@@ -50,11 +50,11 @@ int main()
 
 	ptr = head;
 
-
 	while(ptr!=NULL)
 	{
 		printf("\n%d",ptr->data);
 		ptr = ptr->link;
 	}
+
 	return 0;
 }
