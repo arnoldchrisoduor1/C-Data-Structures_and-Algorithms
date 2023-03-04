@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ * Making negative numbers absolute
+ */
+
 int main(void){
 
 	int absolute(int n){
