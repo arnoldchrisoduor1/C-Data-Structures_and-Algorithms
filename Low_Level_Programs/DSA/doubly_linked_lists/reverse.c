@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 struct node
 {
 	struct node *prev;
@@ -9,16 +10,15 @@ struct node
 void print(struct node *head)
 {
 	struct node *ptr = head;
-
 	while(ptr!=NULL)
 	{
-		printf("%d",ptr->data);
+		printf("\n%d",ptr->data);
 		ptr = ptr->next;
 	}
 }
 struct node* insert(struct node *head,int data)
 {
-	struct node *temp = (struct node)malloc(sizeof(struct node));
+	struct node *temp = (struct node*)malloc(sizeof(struct node));
 	temp->next = NULL;
 	temp->data = data;
 	temp->prev = NULL;
@@ -28,7 +28,7 @@ struct node* insert(struct node *head,int data)
 }
 struct node* addend(struct node *head,int data)
 {
-	struct node* temp, *tp;
+	struct node* temp,*tp;
 	temp = malloc(sizeof(struct node));
 	temp->next = NULL;
 	temp->data = data;
@@ -52,11 +52,11 @@ struct node* create(struct node *head)
 	if(n==0)
 		return head;
 
-	printf("Enter data for the firts node:");
+	printf("Give data for the first node:");
 	scanf("%d",&data);
 	head = insert(head,data);
 
-	for(i=1; i<n; 1++)
+	for(i=1; i<n; i++)
 	{
 		printf("Give the data for node %d:",i+1);
 		scanf("%d",&data);
@@ -64,21 +64,22 @@ struct node* create(struct node *head)
 	}
 	return head;
 }
-struct node *reverse(struct node *head)
+struct node* reverse(struct node *head)
 {
-	struct node *ptr = head;
+	struct node *ptr1 = head;
 	struct node *ptr2 = ptr1->next;
 
-	ptr->prev = ptr->next;
-	ptr->next = NULL;
+	ptr1->next = NULL;
+	ptr1->prev = ptr2;
 
-	while(ptr2!=NULL)
+	while(ptr2!= NULL)
 	{
 		ptr2->prev = ptr2->next;
 		ptr2->next = ptr1;
 		ptr1 = ptr2;
 		ptr2 = ptr2->prev;
 	}
+	head = ptr1;
 	return head;
 }
 int main()
@@ -86,14 +87,13 @@ int main()
 	struct node *head = NULL;
 
 	head = create(head);
-	printf("Before reverse");
+	puts("Before reverse");
 	print(head);
 
-	printf("after reverse");
+	puts("After reverse");
 	head = reverse(head);
 	print(head);
 
 	print(head);
-
 	return 0;
 }
