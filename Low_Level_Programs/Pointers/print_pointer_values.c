@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+ * Printing values
+ *
+ */
+
 int main(void){
 	int n;
 
