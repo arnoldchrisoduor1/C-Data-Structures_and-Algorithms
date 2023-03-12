@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ * Printing out the addresses of memory locations
+ */
+
 int main(){
 
 	int n;
