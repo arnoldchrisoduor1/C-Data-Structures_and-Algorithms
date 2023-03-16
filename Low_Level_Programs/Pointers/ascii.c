@@ -13,6 +13,6 @@ int main(void){
 	c='c';
 	d='d';
 
-	printf("%d %d %d %d %d",&a,&b,&c,&d);
+	printf("%d %d %d %d",a,b,c,d);
 	return 0;
 }
