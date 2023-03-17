@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ * Comparing strings
+ */
+
 int main(void)
 {
 	int comp(char *s1, char *s2)
