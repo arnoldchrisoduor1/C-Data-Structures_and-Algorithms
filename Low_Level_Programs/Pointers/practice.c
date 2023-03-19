@@ -1,12 +1,18 @@
 #include <stdio.h>
 
+/*
+ * Messing with addresses
+ *
+ */
+
 int main(){
 
 	int m;
 	int *n;
 
 	n = &m;
-		m = 89;
+	m = 89;
+
 	printf("\nValue of m before change %d",m);
 	printf("\nValue held by pointer n: %p",n);
 
