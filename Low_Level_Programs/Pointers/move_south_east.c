@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+ * Changing locations
+ *
+ */
+
 void south_east( int *lat, int *lon){
 	*lat = *lat -1;
 	*lon = *lon +1;
@@ -8,6 +13,8 @@ void south_east( int *lat, int *lon){
 int main(){
 	int latitude = 32;
 	int longitude = -73;
+
+	printf("\nThe old location was: [%d,%d]",latitude,longitude);
 
 	south_east(&latitude, &longitude);
 
