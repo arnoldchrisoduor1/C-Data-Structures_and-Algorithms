@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+ * Printing half the characters
+ *
+ */
+
 int main(void)
 {
 	void half(char *p)
