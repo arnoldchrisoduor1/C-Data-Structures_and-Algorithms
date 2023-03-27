@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+ * This function prints an array
+ *
+ */
+
 int main(void)
 {
 	int printt(int *a, int n)
