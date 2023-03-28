@@ -1,1 +1,1 @@
-Re-usable and practice code ,C and Shell
+Re-usable and practice code C and Shell
