@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+ * Trying out the puts function
+ * Does it really print out a new line 
+ */
+
 int main(){
 	puts("Hello World");
 	puts("This should be a new line");
