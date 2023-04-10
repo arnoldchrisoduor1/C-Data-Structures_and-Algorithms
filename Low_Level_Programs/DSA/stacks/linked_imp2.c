@@ -27,7 +27,7 @@ void print()
 
 	while(temp)
 	{
-		printf("%d",temp->data);
+		printf("%d ",temp->data);
 		temp = temp->link;
 	}
 	printf("\n");
