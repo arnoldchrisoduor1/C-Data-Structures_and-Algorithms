@@ -14,16 +14,6 @@ void push(int data)
 	top = top+1;
 	stack_arr[top] = data;
 }
-void print(int *stack_arr)
-{
-	int i;
-	len = sizeof(stack_arr)/sizeof(stack_arr[0]);
-
-	for(i = 0; i< len;i++)
-	{
-		print("%d, ",stack_arr[i])
-	}
-}
 int main()
 {
 	push(1);
