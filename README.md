@@ -26,6 +26,7 @@ This repository contains folders and files of C snippets and algorithms.
 - Mallocs.
 - Pointer Functions.
 - Variadic Functions.
+- Argc , argv
 
 ## Shell Scripts.
 
