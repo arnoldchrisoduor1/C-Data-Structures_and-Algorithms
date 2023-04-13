@@ -27,6 +27,8 @@ This repository contains folders and files of C snippets and algorithms.
 - Pointer Functions.
 - Variadic Functions.
 - Argc , argv
+- Static Libraries.
+- Dynamic Libraries.
 
 ## Shell Scripts.
 
