@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+ * Making number patterns in C
+ *
+ */
+
 int main(void){
 	int e = 48;
 	int a = 48;
