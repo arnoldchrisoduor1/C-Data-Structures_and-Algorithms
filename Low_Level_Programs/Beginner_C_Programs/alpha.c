@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+ * Printing out thr first 10 alphabets
+ *
+ */
+
 int main(void){
 	int i = 1,x;
 	while(i < 10){
