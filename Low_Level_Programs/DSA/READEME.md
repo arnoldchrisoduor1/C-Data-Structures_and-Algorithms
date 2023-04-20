@@ -1,1 +1,3 @@
-This folder contains all practice code on algorithms and data structures
+# Data Structures and Algorithms
+
+This folder contains all codes for C data structures and algorithms.
